@@ -1,0 +1,107 @@
+{
+  "pairs": [
+    {
+      "pair": "escalation_vs_oil",
+      "bars": 7999,
+      "events": 90,
+      "calibration_events": 45,
+      "fitted_beta": 13.29,
+      "true_beta": 15.0
+    },
+    {
+      "pair": "ceasefire_vs_oil",
+      "bars": 7999,
+      "events": 100,
+      "calibration_events": 50,
+      "fitted_beta": -10.56,
+      "true_beta": -12.0
+    },
+    {
+      "pair": "rate_cut_vs_bonds",
+      "bars": 7999,
+      "events": 99,
+      "calibration_events": 49,
+      "fitted_beta": 10.61,
+      "true_beta": 10.0
+    }
+  ],
+  "n_events": 287,
+  "adjustment": {
+    "move_at_shock_bar": 0.01121254355400697,
+    "move_at_horizon": 0.04404529616724739,
+    "share_on_shock_bar": 0.2545684676845187,
+    "half_life_bars": 1,
+    "post_shock_drift": 0.03283275261324042
+  },
+  "cross_correlation": {
+    "-6": 0.0075,
+    "-5": -0.0068,
+    "-4": -0.0028,
+    "-3": 0.0048,
+    "-2": 0.0023,
+    "-1": 0.0015,
+    "0": 0.086,
+    "1": 0.1243,
+    "2": 0.0881,
+    "3": 0.0492,
+    "4": -0.0004,
+    "5": -0.0075,
+    "6": 0.0003
+  },
+  "strategy": {
+    "delay_0h": {
+      "in_sample": {
+        "n_trades": 21,
+        "hit_rate": 0.9047619047619048,
+        "mean_pnl_pp": 4.699999999999999,
+        "t_stat": 5.1781175139602755,
+        "mean_return": 0.09957940213773647,
+        "total_pnl_pp": 98.69999999999999
+      },
+      "out_of_sample": {
+        "n_trades": 12,
+        "hit_rate": 1.0,
+        "mean_pnl_pp": 5.8,
+        "t_stat": 5.6541045699669334,
+        "mean_return": 0.10719790365943448,
+        "total_pnl_pp": 69.6
+      }
+    },
+    "delay_1h": {
+      "in_sample": {
+        "n_trades": 5,
+        "hit_rate": 0.8,
+        "mean_pnl_pp": 2.66,
+        "t_stat": 1.4249681930292484,
+        "mean_return": 0.05589906590219077,
+        "total_pnl_pp": 13.3
+      },
+      "out_of_sample": {
+        "n_trades": 2,
+        "hit_rate": 1.0,
+        "mean_pnl_pp": 5.849999999999998,
+        "t_stat": 2.1272727272727274,
+        "mean_return": 0.11049385251512907,
+        "total_pnl_pp": 11.699999999999996
+      }
+    },
+    "delay_2h": {
+      "in_sample": {
+        "n_trades": 2,
+        "hit_rate": 0.0,
+        "mean_pnl_pp": -3.3499999999999988,
+        "t_stat": -1.634146341463415,
+        "mean_return": -0.053287240415335446,
+        "total_pnl_pp": -6.6999999999999975
+      },
+      "out_of_sample": {
+        "n_trades": 2,
+        "hit_rate": 0.5,
+        "mean_pnl_pp": -1.3999999999999997,
+        "t_stat": -0.6999999999999993,
+        "mean_return": -0.0183326774235865,
+        "total_pnl_pp": -2.7999999999999994
+      }
+    }
+  }
+}

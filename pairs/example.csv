@@ -1,0 +1,4 @@
+name,token_id,asset,sign,start,end,note
+escalation_vs_oil,PASTE_YES_TOKEN_ID,CL=F,1,2025-06-01,2026-06-30,"Escalation odds should rise when crude jumps"
+ceasefire_vs_oil,PASTE_YES_TOKEN_ID,CL=F,-1,2025-06-01,2026-06-30,"Ceasefire odds should fall when crude jumps"
+rate_cut_vs_bonds,PASTE_YES_TOKEN_ID,ZN=F,1,2025-06-01,2026-06-30,"Rate-cut odds should rise when Treasury futures rally"
